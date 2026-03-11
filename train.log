@@ -1,0 +1,25 @@
+/home/xukai/anaconda3/envs/py312cuda128/lib/python3.12/site-packages/torch/cuda/__init__.py:435: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  queued_call()
+/home/xukai/anaconda3/envs/py312cuda128/lib/python3.12/site-packages/accelerate/accelerator.py:528: UserWarning: `log_with=wandb` was passed but no supported trackers are currently installed.
+  warnings.warn(f"`log_with={log_with}` was passed but no supported trackers are currently installed.")
+Traceback (most recent call last):
+  File "/home/xukai/aist5030/miniProject/src/train_dreambooth.py", line 625, in <module>
+    main(args)
+  File "/home/xukai/aist5030/miniProject/src/train_dreambooth.py", line 96, in main
+    import wandb
+ModuleNotFoundError: No module named 'wandb'
+Traceback (most recent call last):
+  File "/home/xukai/anaconda3/envs/py312cuda128/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/xukai/anaconda3/envs/py312cuda128/lib/python3.12/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/home/xukai/anaconda3/envs/py312cuda128/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1405, in launch_command
+    simple_launcher(args)
+  File "/home/xukai/anaconda3/envs/py312cuda128/lib/python3.12/site-packages/accelerate/commands/launch.py", line 993, in simple_launcher
+    raise subprocess.CalledProcessError(returncode=process.returncode, cmd=cmd)
+subprocess.CalledProcessError: Command '['/home/xukai/anaconda3/envs/py312cuda128/bin/python3.12', 'src/train_dreambooth.py', '--pretrained_model_name_or_path=runwayml/stable-diffusion-v1-5', '--instance_data_dir=./data/sks_dog', '--output_dir=./boft_sd_weights', '--instance_prompt=a photo of sks dog', '--validation_prompt=a photo of sks dog', '--resolution=512', '--train_batch_size=2', '--gradient_accumulation_steps=1', '--learning_rate=5e-5', '--lr_scheduler=constant', '--lr_warmup_steps=0', '--max_train_steps=800', '--boft_block_size=4', '--boft_n_butterfly_factor=1', '--seed=42']' returned non-zero exit status 1.
