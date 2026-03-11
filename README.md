@@ -4,8 +4,9 @@
 
 Author: XU Kai (1155239333@link.cuhk.edu.hk)
 
-This repository contains the deliverables for the Mini-Project using **Block-Diagonal Orthogonal Finetuning (BOFT)** for Subject-driven generation (DreamBooth):
+This repository contains the impletementation of fine-tuing for Subject-driven generation (DreamBooth):
 
+- **Method:** Block-Diagonal Orthogonal Finetuning (BOFT)
 - **Hardware:** NVIDIA DGX Spark
 - **Base Model:** Stable Diffusion v1.5
 - **Task:** Injecting a custom subject ("sks dog") into the diffusion model via BOFT.
