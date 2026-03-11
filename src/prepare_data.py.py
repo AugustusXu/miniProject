@@ -13,7 +13,7 @@ def prepare_data():
         repo_type="dataset",
         ignore_patterns=[".gitattributes", "*.md"]
     )
-    print(f"✅ Data ready at: {local_dir}")
+    print(f"Data ready at: {local_dir}")
 
 if __name__ == "__main__":
     prepare_data()

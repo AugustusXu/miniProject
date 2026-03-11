@@ -44,8 +44,7 @@ pip install -r requirements.txt
 ## 3. Quick Start
 **Note: Please run all commands from the root directory of this project.**
 
-1. Install dependencies: `pip install diffusers transformers accelerate peft datasets huggingface_hub matplotlib jupyter`
-2. Prepare Data: `python src/prepare_data.py`
-3. Run Training: `bash scripts/run_training.sh`
-4. Plot Loss Curve: `python src/plot_loss.py`
-5. Visualization: Open `demo/demo.ipynb` to generate images and compare the qualitative results.
+1. Prepare Data: `python src/prepare_data.py`
+2. Run Training: `bash scripts/run_training.sh`
+3. Plot Loss Curve: `python src/plot_loss.py`
+4. Visualization: Open `demo/demo.ipynb` to generate images and compare the qualitative results.
